@@ -1,0 +1,44 @@
+# 1. Remainder
+a, b = 17, 5
+print(a % b)
+
+# 2. Even or odd
+number = int(input("Enter number: "))
+print("Even" if number % 2 == 0 else "Odd")
+
+# 3. Larger of two numbers
+a, b = map(float, input("Enter two numbers: ").split())
+print(max(a, b))
+
+# 4. Square and cube
+n = float(input("Enter number: "))
+print("Square:", n ** 2, "Cube:", n ** 3)
+
+# 5. Check equality
+a, b = input("Enter two values: ").split()
+print(a == b)
+
+# 6. True if both numbers are positive
+a, b = map(float, input("Enter two numbers: ").split())
+print(a > 0 and b > 0)
+
+# 7. Float to integer
+value = float(input("Enter float: "))
+print(int(value))
+
+# 8. String to integer, multiply by 10
+value = input("Enter a number: ")
+print(int(value) * 10)
+
+# 9. Use and / or operators
+age = int(input("Age: "))
+has_id = input("Do you have an ID? (yes/no): ").lower() == "yes"
+print("Entry allowed:", age >= 18 and has_id or age >= 21)
+
+# 10. Quotient and remainder
+a, b = map(int, input("Enter dividend and divisor: ").split())
+if b != 0:
+    print("Quotient:", a // b)
+    print("Remainder:", a % b)
+else:
+    print("Cannot divide by zero")
